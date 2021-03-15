@@ -1,11 +1,11 @@
 import React from 'react'
-import s from './New.module.css';
+import s from './Music.module.css';
 
-const New = (props) => {
+const Music = (props) => {
     return (
         <div>
-            New
+            Music
         </div>
     );
 }
-export default New;
+export default Music;

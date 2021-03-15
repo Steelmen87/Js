@@ -1,11 +1,11 @@
 import React from 'react'
-import s from './Dialogs.module.css';
+import s from './New.module.css';
 
-const Dialogs = (props) => {
+const New = (props) => {
     return (
         <div>
-            Dialogs
+            New
         </div>
     );
 }
-export default Dialogs;
+export default New;

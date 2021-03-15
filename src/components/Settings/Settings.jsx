@@ -1,11 +1,11 @@
 import React from 'react'
-import s from './New.module.css';
+import s from './Settings.module.css';
 
-const New = (props) => {
+const Settings = (props) => {
     return (
         <div>
-            New
+            Settings
         </div>
     );
 }
-export default New;
+export default Settings;
