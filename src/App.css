@@ -15,8 +15,12 @@
 
 .app-wrepper-content {
     grid-area: cont;
-    background-color: rgb(221, 238, 196);
+    background-color: rgba(213,199,186,0.9);
 
 
+}
+.app-wrepper-content img{
+    height: 250px;
+    width: 1000px;
 }
 
