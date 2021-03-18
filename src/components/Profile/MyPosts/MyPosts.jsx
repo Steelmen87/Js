@@ -3,13 +3,15 @@ import pro from './MyPosts.module.css';
 import Post from './Post/Post';
 const MyPosts = () => {
     return (
-      <div>
-           My post
+      <div className={pro.postsBlock}>
+          <h3>My post</h3>
          <div>
+             <div>
           <textarea></textarea>
-          <button>Add post</button>
+             </div>
+                 <button>Add post</button>
         </div>
-        <div className='post'>
+        <div className={pro.posts}>
           <Post message='Hi , how are you ?' two=' I am fine.' lick='5'/>
           <Post message="It's my first post." two=' Uraa!' lick='10'/>
           
