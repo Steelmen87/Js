@@ -9,7 +9,7 @@ import New from "./components/New/New";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 
-function App() {
+function App(props) {
   return (
       <BrowserRouter>
     <div className='app-wrepper'>
@@ -17,11 +17,11 @@ function App() {
      <NavBar />
 
      <div class='app-wrepper-content'>
-         <Route path="/dialogs" component={Dialogs}/>
-         <Route path="/profile"component={Profile}/>
-         <Route path="/new"component={New}/>
-         <Route path="/music"component={Music}/>
-         <Route path="/settings"component={Settings}/>
+         <Route path="/dialogs" render={ () =><Dialogs dialogsData={props.dialogsData} messageData={props.messageData}/>}/>
+         <Route path="/profile"render={ () =><Profile posts={props.posts}/>}/>
+         <Route path="/new"render={ () =><New />}/>
+         <Route path="/music"render={ () =><Music />}/>
+         <Route path="/settings"render={ () =><Settings />}/>
      </div>
     </div>
       </BrowserRouter>);
