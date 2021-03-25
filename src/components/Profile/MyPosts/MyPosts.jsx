@@ -4,7 +4,7 @@ import Post from "./Post/Post";
 
 const MyPosts = (props) => {
   
-  let postsElements = props.Myposts.map((p) => (<Post message={p.message} two=" I am fine." lick={p.lick} />
+  let postsElements = props.Myposts.map((p) => (<Post message={p.message} lick={p.lick} />
   ));
 
   let newPostElement = React.createRef(); //создаём ссылку на элемент textarea
@@ -12,7 +12,8 @@ const MyPosts = (props) => {
 
   let addPost = () => {
     let text = newPostElement.current.value;
-    alert(text);
+    props.addPost(text);
+    newPostElement.current.value='';
   }
 
 
