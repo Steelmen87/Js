@@ -2,7 +2,7 @@ let state = {
   profilePage: {
     posts: [
       { id: 1, message: "Hi , how are you ?", lick: 5 },
-      { id: 2, message: "It's my first post.", lick: 23 },
+      { id: 2, message: "It's my first post.", lick: 23 }
     ],
   },
   dialogsPage: {
@@ -12,7 +12,7 @@ let state = {
       { id: 3, name: "Sveta" },
       { id: 4, name: "Sasha" },
       { id: 5, name: "Viktor" },
-      { id: 6, name: "Valera" },
+      { id: 6, name: "Valera" }
     ],
     messageData: [
       { id: 1, message: "Hi" },
@@ -20,7 +20,7 @@ let state = {
       { id: 3, message: "Yo" },
       { id: 4, message: "Yo" },
       { id: 5, message: "Yo" },
-      { id: 6, message: "Yo" },
+      { id: 6, message: "Yo" }
     ],
   },
 };
