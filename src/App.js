@@ -22,7 +22,11 @@ function App(props) {
         <div className="app-wrepper-content">
           <Route path="/dialogs" render={() => (<Dialogs dialogsData={props.state.dialogsPage.dialogsData}
                                                          messageData={props.state.dialogsPage.messageData}/>)}/>
-          <Route path="/profile" render={() => <Profile posts={props.state.profilePage.posts} addPost={props.addPost} />}/>
+          <Route path="/profile" render={() => <Profile 
+          posts={props.state.profilePage.posts} 
+          newPostText={props.state.profilePage} 
+          addPost={props.addPost} 
+          updateNewText={props.updateNewText}/>}/>
           <Route path="/new" render={() => <New />} />
           <Route path="/music" render={() => <Music />} />
           <Route path="/settings" render={() => <Settings />} />
