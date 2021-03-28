@@ -21,7 +21,8 @@ function App(props) {
         </div>
         <div className="app-wrepper-content">
           <Route path="/dialogs" render={() => (<Dialogs dialogsData={props.state.dialogsPage.dialogsData}
-                                                         messageData={props.state.dialogsPage.messageData}/>)}/>
+                                                         messageData={props.state.dialogsPage.messageData}
+                                                         addAnswer={props.addAnswer}/>)}/>
           <Route path="/profile" render={() => <Profile 
           posts={props.state.profilePage.posts} 
           newPostText={props.state.profilePage} 
